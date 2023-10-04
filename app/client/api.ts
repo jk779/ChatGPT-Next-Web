@@ -102,7 +102,7 @@ export class ClientApi {
     console.log("[Share]", messages, msgs);
     const clientConfig = getClientConfig();
     const proxyUrl = "/sharegpt";
-    const rawUrl = "https://sharegpt.com/api/conversations";
+    const rawUrl = "https://sharegpt.com.as9000.net/api/conversations";
     const shareUrl = clientConfig?.isApp ? rawUrl : proxyUrl;
     const res = await fetch(shareUrl, {
       body: JSON.stringify({
@@ -118,7 +118,7 @@ export class ClientApi {
     const resJson = await res.json();
     console.log("[Share]", resJson);
     if (resJson.id) {
-      return `https://shareg.pt/${resJson.id}`;
+      return `https://shareg.pt.as9000.net/${resJson.id}`;
     }
   }
 }
