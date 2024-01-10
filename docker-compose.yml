@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 services:
   chatgpt-next-web:
     container_name: chatgpt-next-web
@@ -6,7 +6,7 @@ services:
     ports:
       - 4321:3000
     environment:
-      - OPENAI_API_KEY=$OPENAI_API_KEZ
+      - OPENAI_API_KEY=$OPENAI_API_KEY
       - CODE=Floofy
       #- BASE_URL=$BASE_URL
       #- OPENAI_ORG_ID=$OPENAI_ORG_ID
