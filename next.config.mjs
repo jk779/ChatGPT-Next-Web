@@ -74,7 +74,7 @@ if (mode !== "export") {
       },
       {
         source: "/sharegpt",
-        destination: "https://sharegpt.com/api/conversations",
+        destination: "https://sharegpt.com.as9000.net/api/conversations",
       },
     ];
 
